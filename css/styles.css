@@ -883,3 +883,20 @@ footer {
   outline: none;
   border-color: var(--accent-color);
 }
+
+.form-comment::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox-label::before {
+  display: block;
+  width: 16px;
+  height: 15px;
+  border:solid 1px #212121;
+  content: '';
+  cursor: pointer;
+}
+
+.form-checkbox-input:checked + .checkbox-label::before {
+  background-color: #2196f3;
+}
