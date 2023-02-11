@@ -405,44 +405,56 @@
           </button>
           <!-- ФОРМА-->
           <form class="modal-form" autocomplete="off">
-            <p>Залиште свої дані, ми вам передзвонимо</p>
+            <p class="modal-form-instructions">Залиште свої дані, ми вам передзвонимо</p>
             <label class="form-field">
-              <input
-                type="text"
-                class="form-input"
-                name="user_name"
-                required
-                pattern="^[a-zA-Zа-яА-ЯЇїІі]+"
-                minlength="2"
-              />
               <span class="form-label">Ім'я</span>
-              <span class="form-icon"></span>
+              <span class="form-input-wrapper">
+                <input
+                  type="text"
+                  class="form-input"
+                  name="user_name"
+                  required
+                  pattern="^[a-zA-Zа-яА-ЯЇїІі]+"
+                  minlength="2"
+                />
+                <svg class="form-icon" width="12" height="12">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </span>
             </label>
 
             <label class="form-field">
-              <input
-                type="tel"
-                class="form-input"
-                name="user_phone"
-                required
-                pattern="[0-9{3}-0-9{3}-0-9{2}-0-9{2}]"
-                title="xxx-xxx-xx-xx"
-              />
               <span class="form-label">Телефон</span>
-              <span class="form-icon"></span>
+              <span class="form-input-wrapper">
+                <input
+                  type="tel"
+                  class="form-input"
+                  name="user_phone"
+                  required
+                  pattern="[0-9{3}-0-9{3}-0-9{2}-0-9{2}]"
+                  title="xxx-xxx-xx-xx"
+                />
+                <svg class="form-icon" width="12" height="12">
+                  <use href="./images/icons.svg#icon-Vector-1"></use>
+                </svg>
+              </span>
             </label>
 
             <label class="form-field">
-              <input type="mail" class="form-input" name="user_email" required />
               <span class="form-label">Пошта</span>
-              <span class="form-icon"></span>
+              <span class="form-input-wrapper">
+                <input type="mail" class="form-input" name="user_email" required />
+                <svg class="form-icon" width="12" height="12">
+                  <use href="./images/icons.svg#icon-Vector-3"></use>
+                </svg>
+              </span>
             </label>
 
             <label class="form-field">
               <span class="form-label">Коментар</span>
               <span class="form-icon"></span>
               <textarea
-                class="form-input"
+                class="form-comment"
                 name="user_comment"
                 required
                 placeholder="Введіть текст"
@@ -455,7 +467,7 @@
               </label>
               <input
                 id="user-policy"
-                class="checkbox"
+                class="form-input"
                 type="checkbox"
                 name="name"
                 required
@@ -466,7 +478,6 @@
             </div>
 
             <button type="submit">Відправити</button>
-            <button type="reset">Reset</button>
           </form>
         </div>
       </div>
