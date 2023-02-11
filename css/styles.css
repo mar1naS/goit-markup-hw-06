@@ -679,9 +679,10 @@ footer {
 
 .all-contacts .social-contacts {
   margin-left: 70px;
+  margin-right: 93px;
 }
 
-.social-contacts .join {
+.footer-instructions {
   margin-bottom: 20px;
 
   font-family: 'Roboto';
@@ -743,6 +744,58 @@ footer {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+
+/*Footer Form*/
+
+.footer-form-input {
+  width: 358px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: var(--primary-bg-color);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  background-color: transparent;
+  outline: none;
+  margin-right: 12px;
+}
+
+.footer-form-input::placeholder {
+  text-color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+.footer-submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8;
+  border: none;
+  background-color: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color 250ms (0.4, 0, 0.2, 1);
+}
+
+.footer-submit-button:hover,
+.footer-submit-button:focus {
+  background-color: #188CE8;
+}
+
+.footer-form-wrapper {
+  display: flex;
 }
 
 /*--Modal Window--*/
@@ -809,6 +862,7 @@ footer {
 .modal-close-button:focus {
   fill: var(--accent-color);
 }
+
 
 /*Forms*/
 .modal-form {
@@ -931,6 +985,7 @@ footer {
   padding-bottom: 10px;
   align-self: center;
   font-weight: 700;
+  border: none;
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -941,3 +996,5 @@ footer {
   background: #188CE8;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
