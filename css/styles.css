@@ -675,6 +675,7 @@ footer {
 .all-contacts {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .all-contacts .social-contacts {
